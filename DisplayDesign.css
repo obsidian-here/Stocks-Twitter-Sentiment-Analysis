@@ -1,0 +1,84 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d0cfcfdd;
+}
+
+.container {
+    max-width: 85%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center; 
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.category-header:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.toggle-arrow {
+    margin-right: 10px;
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
+
+.images {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.images.show {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.image-card {
+    width: calc(20% - 10px); /* Adjust based on the number of images */
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+/* .image-card:hover {
+    transform: scale(1.05);
+} */
+
+.Sentiment{
+    width: 200%;
+    flex-direction: column;
+}
+
+.image {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.image-description {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
